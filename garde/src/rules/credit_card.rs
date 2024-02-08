@@ -54,11 +54,11 @@ pub struct InvalidCard(card_validate::ValidateError);
 impl Display for InvalidCard {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match &self.0 {
-            card_validate::ValidateError::InvalidFormat => write!(f, "invalid format"),
-            card_validate::ValidateError::InvalidLength => write!(f, "invalid length"),
-            card_validate::ValidateError::InvalidLuhn => write!(f, "invalid luhn"),
-            card_validate::ValidateError::UnknownType => write!(f, "unknown type"),
-            _ => write!(f, "unknown error"),
+            card_validate::ValidateError::InvalidFormat => write!(f, "format invalide"),
+            card_validate::ValidateError::InvalidLength => write!(f, "longueur invalide"),
+            card_validate::ValidateError::InvalidLuhn => write!(f, "numéro invalide"),
+            card_validate::ValidateError::UnknownType => write!(f, "type inconnu"),
+            _ => write!(f, "erreur inconnue"),
         }
     }
 }
