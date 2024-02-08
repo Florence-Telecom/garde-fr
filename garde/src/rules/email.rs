@@ -33,7 +33,7 @@ macro_rules! init_regex {
 
 pub fn apply<T: Email>(v: &T, _: ()) -> Result<(), Error> {
     if let Err(e) = v.validate_email() {
-        return Err(Error::new(format!("not a valid email: {e}")));
+        return Err(Error::new(format!("n'est pas un courriel valide: {e}")));
     }
     Ok(())
 }

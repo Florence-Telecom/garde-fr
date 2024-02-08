@@ -1,3 +1,7 @@
+## Garde-FR
+
+A modified version of garde with error messages mostly in french while awaiting i18n of Garde library
+
 # Garde &emsp; [![Documentation]][docs.rs] [![Latest Version]][crates.io]
 
 [docs.rs]: https://docs.rs/garde/latest/garde/

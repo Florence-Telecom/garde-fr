@@ -20,7 +20,7 @@ use crate::error::Error;
 
 pub fn apply<T: PhoneNumber>(v: &T, _: ()) -> Result<(), Error> {
     if let Err(e) = v.validate_phone_number() {
-        return Err(Error::new(format!("not a valid phone number: {e}")));
+        return Err(Error::new(format!("n'est pas un numéro de téléphone valide: {e}")));
     }
     Ok(())
 }
